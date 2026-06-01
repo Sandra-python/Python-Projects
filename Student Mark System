@@ -1,5 +1,5 @@
-def calculate_total_average(l,o,r,t):
-	t=o+r+t
+def calculate_total_average(l,o,r,m):
+	t=o+r+m
 	a=round(t/3,2)
 	return t,a
 while True:
