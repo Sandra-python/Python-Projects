@@ -1,0 +1,25 @@
+def calculate_total_average(l,o,r,t):
+	t=o+r+t
+	a=round(t/3,2)
+	return t,a
+while True:
+	name=input("Enter the name:")
+	m=int(input("Enter your Maths mark: "))
+	p=int(input("Enter your Physics mark: "))
+	c=int(input("Enter your Chemistry mark: "))
+	t,a=calculate_total_average(name,m,p,c)
+	print("Total : ",t)
+	print("Average : ",a)
+	if a>=90:
+		print("Grade: A+")
+	elif a>=80:
+		print("Grade: A")
+	elif a>=70:
+		print("Grade: B")
+	elif a>=60:
+		print("Grade: C")
+	else:
+		print("Grade: D")
+	d=input("Do you wish to continue(Y/N): ")
+	if d=='N' or d=='n':
+		break
